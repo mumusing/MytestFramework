@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Acceptance" parallel="tests" thread-count="2">
+<listeners>
+<listener class-name="org.oracle.cloud.common.RetryListener"></listener>
+</listeners>
+<test name="Acceptance Test Case" preserve-order="false" enabled="true">
+<parameter name="browser" value="firefox"></parameter>
+<parameter name="platform" value="Window"></parameter>
+<parameter name="response" value="201,203,204"></parameter>
+<groups>
+<define name="All">
+<include name="suv"></include>
+<include name="bikes"></include>
+<include name="sedan"></include>
+</define>
+<define name="try">
+<include name="bike"></include>
+<include name="bus"></include>
+</define>
+<run>
+<include name="All"></include>
+</run>
+
+</groups>
+
+
+<classes>
+<class name="com.org.test.NewTest" />
+</classes>
+</test>
+</suite>

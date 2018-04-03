@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Acceptance">
+<test name="Acceptance Test Case">
+
+
+<classes>
+<class name="dataDriven.TestDriver" />
+</classes>
+</test>
+</suite>
