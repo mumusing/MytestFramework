@@ -38,7 +38,7 @@ public class App
 //     Report.log(Status.PASS, "Pass", driver);
 //     Report.endExtentReport();
 //     Report.endExtentTest();
-    	
+    	System.out.println("hello");
     	
     	System.out.println(System.getProperty("user.dir")+"\\"+"drivers\\chromedriver.exe");
     }
