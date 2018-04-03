@@ -67,6 +67,7 @@ public class AcceptanceTestCases extends TestCase
    @Test
    public void createTransactionGroup() throws Exception
    {
+	   //save the changes 
 	   try
 	   {
 		   String tranCode=dp.get("TransactionGroups", "txtCode")+DateHelper.GetRandomNumber(3);
